@@ -64,14 +64,12 @@ ZSH_THEME="gentoo"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   brew
-  colored-man
   colored-man-pages
   colorize
   git
   osx
   pip
   python
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
 source ~/.bash_profile
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
