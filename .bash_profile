@@ -30,6 +30,14 @@ function git-force-clean {
  git clean -fdx && yarn install && yarn install-gems && yarn install-ios
 }
 
+function git-diff {
+ git diff > gd~1.diff && code gd~1.diff &; sleep 2; rm gd~1.diff
+}
+
+function git-clean-local {
+ git branch | egrep -v "(master|\*)" | xargs git branch -D
+}
+
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
