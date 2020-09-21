@@ -8,9 +8,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # ANDROID
-export ANDROID_HOME="/Users/alanpazetto/Library/Android/sdk"
-export ANDROID_TOOLS="/Users/alanpazetto/Library/Android/sdk/tools/"
-export ANDROID_PLATFORM_TOOLS="/Users/alanpazetto/Library/Android/sdk/platform-tools"
+export ANDROID_HOME="~/Library/Android/sdk"
+export ANDROID_TOOLS="~/Library/Android/sdk/tools/"
+export ANDROID_PLATFORM_TOOLS="~/Library/Android/sdk/platform-tools"
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$ANDROID_SDK_ROOT
 
