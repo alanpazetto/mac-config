@@ -64,7 +64,6 @@ ZSH_THEME="gentoo"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   brew
-  colored-man-pages
   colorize
   git
   osx

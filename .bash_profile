@@ -38,6 +38,20 @@ function git-clean-local {
  git branch | egrep -v "(master|\*)" | xargs git branch -D
 }
 
+function git() {
+    # Allows you to call `git ipatch patchfile`
+    # Change ipatch to whatever you want the git command to be
+    if [[ "$1" = ipatch ]]; then
+        shift
+        # Specify the full path to git, otherwise infinite recursion
+        # Alternatively, name the function something else
+        /usr/bin/git apply "$@"
+        /usr/bin/git add -p
+    else
+        /usr/bin/git "$@"
+    fi
+}
+
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
