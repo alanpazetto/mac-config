@@ -1,0 +1,51 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+blur = true
+# decorations = "Buttonless"
+opacity = 0.8
+option_as_alt = "Both"
+padding.x = 10
+padding.y = 10
+
+[font]
+size = 14
+
+[font.normal]
+family = "MesloLGS Nerd Font Mono"
+
+[font.offset]
+x = 0
+y = 1
+
+[colors.primary]
+background = "0x263137"
+foreground = "0xeceef0"
+
+[colors.cursor]
+text = "0x000000"
+cursor = "0xedeeed"
+
+[colors.normal]
+black = "0x546d79"
+blue = "0x40c4fe"
+cyan = "0x64fcda"
+green = "0x69f0ad"
+magenta = "0xff3f80"
+red = "0xff5151"
+white = "0xfefefe"
+yellow = "0xffd73f"
+
+[colors.bright]
+black = "0xb0bec4"
+blue = "0x80d7fe"
+cyan = "0xa7fdeb"
+green = "0xb9f6c9"
+magenta = "0xff80ab"
+red = "0xff8980"
+white = "0xfefefe"
+yellow = "0xffe47e"
+
+[selection]
+save_to_clipboard = true
